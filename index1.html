@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1
+        {
+            height:100px;
+            width:100px;
+            background-color:red;
+            margin:100px auto;
+            animation-name:abc;
+            animation-duration:1s;
+            animation-timing-function:linear;
+        }
+
+        @keyframes abc
+        {
+            0%
+            {
+                transform:rotateZ(0deg);
+            }
+
+            100%
+            {
+                transform:rotateZ(359deg);
+            }
+        }
+
+        .a2
+        {
+            height:100px;
+            width:100px;
+            background-color:red;
+            animation-name:abc1;
+            animation-duration:1s;
+            animation-timing-function:linear;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+        }
+
+        @keyframes abc1
+        {
+            0%
+            {
+                transform:translateX(0px);
+            }
+
+            100%
+            {
+                transform:translateX(500px);
+            }
+        }
+        .a3
+        {
+            height:100px;
+            width:100px;
+            background-color:red;
+            animation-name:abc2;
+            animation-duration:1s;
+            animation-timing-function:ease-in;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+        }
+
+        @keyframes abc2
+        {
+            0%
+            {
+                transform:translateX(0px);
+            }
+
+            100%
+            {
+                transform:translateX(500px);
+            }
+        }
+        .a4
+        {
+            height:100px;
+            width:100px;
+            background-color:red;
+            animation-name:abc1;
+            animation-duration:3s;
+            animation-timing-function:ease-out;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+        }
+
+        @keyframes abc1
+        {
+            0%
+            {
+                transform:translateX(0px);
+            }
+
+            100%
+            {
+                transform:translateX(500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a1"></div>
+    <div class="a2"></div>
+    <div class="a3"></div>
+    <div class="a4"></div>
+</body>
+</html>
