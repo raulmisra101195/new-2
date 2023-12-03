@@ -1,0 +1,84 @@
+.a1
+{
+    display:block;
+    height:447px;
+    margin:150px auto;
+    width:521px;
+    background-image:-webkit-linear-gradient(top,#3A3A3A,#303030);
+}
+.a2
+{
+    height: 75px;
+    text-align:center;
+    color:#fff;
+    font-size:2em;
+    font-family: Arial !important;
+    line-height: 75px;
+    border-bottom: 2px;
+    background-image:-webkit-linear-gradient(top,#3A3A3A,#2D2D2D);
+}
+.a3
+{
+    margin-top:38px;
+}
+
+input
+{
+    display:block;
+    margin:auto;
+    padding-left:43px;
+    width:85%;
+    height:36px;
+    font-size:12px;
+    margin-top:15px;
+    border-radius:15px;
+}
+
+.a4
+{
+   color:#fff; 
+   text-align:left;
+}
+.lab{
+    margin-left:-220px !important;
+}
+
+#vehicle1,.lab
+{
+    height:14px;
+    display:inline;
+    margin-left:-195px;
+}
+
+#po
+{
+    height:47px;
+    width:247px;
+    margin-left:250px;
+
+    border-radius: 20px;
+    font-size:2em;
+    font-family: Arial;
+    
+}
+
+.a3 input:nth-child(1){
+    background-image: url("img/1.png");
+    background-repeat: no-repeat;
+    background-position:  10px center ;
+}
+.a3 input:nth-child(2){
+    background-image: url("img/2.png");
+    background-repeat: no-repeat;
+    background-position:  10px center ;
+}
+.a3 input:nth-child(3){
+    background-image: url("img/3.png");
+    background-repeat: no-repeat;
+    background-position:  10px center ;
+}
+.a3 input:nth-child(4){
+    background-image: url("img/4.png");
+    background-repeat: no-repeat;
+    background-position:  10px center ;
+}
