@@ -1,0 +1,29 @@
+.a1
+{
+    background-image: url(../img/twitter-bird-sprite.png);
+    height:184px;
+    width:167px;
+    background-repeat: no-repeat;
+    animation-name: bird1;
+    animation-duration:3s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: infinite;
+    transition:all 1s linear;
+    background-size:cover;
+
+    position: relative;
+}
+
+@keyframes bird1
+{
+    0%
+    {
+        background-position:0px 0px;
+        left:0%;
+    }
+    100%
+    {
+        background-position: -575px 0px;
+        left:100% !important;
+    }
+}
