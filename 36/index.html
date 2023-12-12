@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        @font-face
+        {
+            font-family:'Calibri';
+            src:url("./fonts/CalibriRegular.ttf") format('ttf');
+        }
+        body
+        {
+            font-family: Calibri;
+        }
+        .a_cont_fluid
+        {
+            height:900px;
+            border:1px dashed red; 
+        }
+        .a_row > div:nth-child(2)
+        {
+           background: #443460;
+        }
+        .a_tbdr{
+            border:1px dashed black; 
+        }
+        .a_row >div:nth-child(1)
+        {
+            background:#fff;
+        }
+        
+        .a_row input[type="email"]:focus, .a_row input[type="password"]:focus
+        {
+            box-shadow:none;
+        }
+        .a_dark
+        {
+            color:#43425D;
+        }
+        a:hover{
+            color:#4a274f;/* #ffb900 #4a274f */
+        }
+        .form-check-input:checked{
+            background-color: #4a274f !important;
+            border-color:#4a274f !important;
+            
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid a_cont_fluid">
+    <div class="row a_row h-100 bg-success">
+        <div class="col-7 a_tbdr p-3 ">
+            <a href="#">
+                <img src="./img/logo2.png" alt="">
+            </a>
+            <div class=" w-50 offset-3 text-center">
+                <h1>Welcome Back !</h1>
+                <p>Please login to your ideal insight account.</p>
+                <form class="text-start">
+                    <div class="mb-3">
+                    
+                      <input type="email" placeholder="Email" class="form-control border-bottom border-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      
+                    </div>
+                    <div class="mb-3">
+                     
+                      <input type="password" placeholder="Password" class="form-control border-bottom border-0 rounded-0"  id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label " for="exampleCheck1">Remember Me</label></div>
+                            <div class="col-6">
+                                <a href="#">Forget Password?</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100 rounded-2">Submit</button>
+                  </form>
+            </div>
+            
+        </div>
+        <div class="col-5 a_tbdr p-0">B</div>
+    </div>
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

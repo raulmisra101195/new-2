@@ -1,0 +1,98 @@
+.a1,.a2
+{
+    height:212px;
+    width:280px;
+    background-image: url("./img/1.jpg");
+    box-shadow: 1px 1px #E7E9EB;
+    margin:12px;
+    background-size:cover;
+    position:relative;
+}
+
+.overlay,.overlay1
+{
+    position:absolute;
+    background-color: rgba(0,0,0,0.5);
+    height:212px;
+    width:280px;
+    opacity:0;
+}
+
+.a1 > .overlay
+{
+    top:-212px;
+}
+
+.a2:hover > .overlay1
+{
+    top:0px;
+    opacity:1;
+}
+
+.a11,.a22
+{
+    position:absolute;
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    background-color: #E7E9EB;
+    top:103px;
+    left:95px;
+    text-align:center;
+    line-height: 30px;
+}
+.a22
+{
+    top:103px;
+    left:130px;
+}
+
+.a1:hover > .overlay
+{
+    top:0px !important;
+    opacity:1;
+    transition:all linear 1s;
+}
+
+.b22,.b11
+{
+    transition:all 2s linear;
+}
+
+.a1,.a2
+{
+    display:inline-block;
+}
+
+.b11,.b22
+{
+    position:absolute;
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    background-color: #E7E9EB;
+    text-align:center;
+    line-height: 30px;
+}
+
+.b11
+{
+    top:110px;
+    left:40px;
+}
+
+.b22
+{
+    top:110px;
+    left:180px;
+}
+
+.a2:hover > .overlay1 .b11
+{
+    left:115px !important;
+}
+
+.a2:hover > .overlay1 .b22
+{
+    left:150px !important;
+}

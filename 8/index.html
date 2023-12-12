@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div
+         {
+            height:100px;
+            width:100px;
+            background-color: green;
+         }
+
+         #a2
+         {
+            display:block;
+            height:100px;
+            width:100px;
+            background-color: red;
+
+         }
+         .a3
+         {
+            display:block;
+            height:100px;
+            width:100px;
+            background-color: purple;
+         }
+         a[href="https://oklabs.in"]
+         {
+            
+            display:block;
+            height:100px;
+            width:100px;
+            background-color: orange;
+            text-decoration: none;
+            text-align:center;
+         }
+         *
+         {
+            border:5px solid #000;
+         }
+
+         #a1,#a2,.a3,a[href="https://oklabs.in"]
+         {
+            display:inline-block;
+         }
+         #a4
+         {
+            height: 400px;
+            width:400px;
+            background-color: red;
+         }
+         #a4:hover
+         {
+            background-color: green;
+
+         }
+         #a4:after
+         {
+            height:400px;
+            width:400px;
+            content:url("https://as2.ftcdn.net/v2/jpg/01/36/70/67/1000_F_136706734_KWhNBhLvY5XTlZVocpxFQK1FfKNOYbMj.jpg");
+         }
+    </style>
+
+</head>
+<body>
+    <div id="a1">A1</div>
+    <span id="a2">A2</span>
+    <span class="a3">A3</span>
+    <a href="https://oklabs.in"> Selector</a>
+    <div id="a4">apple</div>
+</body>
+</html>

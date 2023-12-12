@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link 
+    rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-font-face.min.css" integrity="sha512-vU8GapgME7Cc/sHTwbn2Q1eMBgE/ZBU8JL/oRo+Cw/frBXtmeekNEYbNe2gezj/cPaSdkTdERyimVSb+2F6f0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .a_p0
+        {
+            padding:0px;
+        }
+        body{
+            margin:0px;
+            background-color: #bdcbe5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header
+        {
+            height:300px;
+            width:100%;
+            border: 1px solid red;;
+           
+        }
+        div.main
+        {
+            height:4000px;
+            width:100%;
+            border: 1px solid red;;
+            
+        }
+        footer
+        {
+            height:600px;
+            width:100%;
+            border: 1px solid green;; 
+           
+        }
+        header > nav
+        {   
+            float:clear;
+            height:54px;
+            width:80%; 
+            background-color: #fff;
+            margin:auto;
+            border-radius: 10px;
+            box-shadow:0px 0px 30px 10px rgba(0,00,0,0.1);
+        }
+        header h1
+        {
+            margin-top:87px;color:#333;
+            text-shadow:0px 1px 2px #fff;
+            text-align:center;
+        }
+        header >nav> ul
+        {
+            
+            list-style: none;
+            
+        }
+        header >nav >ul >li
+        {
+            float:left;
+            
+            
+        }
+        header >nav >ul >li >a/*anchor is an inline element*/
+        {
+            text-decoration: none;
+            color:#a6a6a6;
+            padding:18px 25px;
+            display:block;
+            border-right:1px solid #d9d9d9;
+        }
+        .submenu
+        {
+            display:none;
+            width:294px;
+            background-color: white;
+            position:absolute;
+            top:62px;
+            left:0px;
+            border-radius: 10px;
+            border-top-left-radius: 0px;
+
+        }
+        
+        .menu>li:hover > a
+        {
+            background-color: #fff;
+            padding-bottom:32px;
+        }
+        .menu >li
+        {
+            position:relative;
+        }
+        .menu >li:nth-child(3) > a::after
+        {
+            content:"▾";
+        }
+        .active
+        {
+            color:#2B82D9;
+        }
+        .a_left
+        {
+            float:left;
+        }
+        .a_right
+        {
+            float:right;
+        }
+        .a_mo
+        {
+            margin:0px;
+        }
+        .submenu > li > a
+        {
+            border-bottom: 1px solid #d9d9d9;
+            display:block;
+            padding:25px;
+        }
+        a{
+            text-decoration: none;
+            color:#a6a6a6;
+        }
+        ul
+        {
+            list-style:none;
+        }
+        
+        
+        .submenu2
+        {
+            
+            display:none;
+            position: absolute;
+            left:293px;
+            top:10px;
+            border-radius: 5px;;
+            box-shadow:0px 0px 30px 10px rgba(0,00,0,0.1);
+        }
+        li:hover > .submenu
+        {
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pure CSS3 Mega Menu</h1>
+        <nav>
+        <ul class="a_p0 menu a_left a_mo">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="" class="active"><i class="fa-solid fa-star"></i>About</a>
+                <ul class="submenu a_p0">
+                    <li><a href="">News<i class="fa-solid fa-briefcase a_right"></i></a>
+                    <ul class="a_po submenu submenu2  a_p0">
+                        <li><a href="">Company</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Special</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="">News2</a></li>
+                    <li><a href="">News3</a></li>
+                    <li><a href="">News4</a></li>
+                    <li><a href="">News5</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href=""><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+            </li>
+            <li>
+                <a href=""><i class="fa-solid fa-phone"></i>Contact</a>
+            </li>
+        </ul>
+                <ul class="a_p0  a_right menu a_mo">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="" class="active"><i class="fa-solid fa-star"></i>About</a>
+            </li>
+            
+        </ul>
+        </nav>
+    </header>
+    <div class="main"></div>
+    <footer></footer>
+</body>
+</html>

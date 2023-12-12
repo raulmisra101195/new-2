@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .firstul
+        {  
+            width:1280px;
+            background-color: #1F1F1F;
+            margin:50px auto;
+            height:54px;
+            padding:0px;  
+        }
+        .firstul > li > a
+        {  
+            height:12px;
+            text-decoration: none;
+            color:#FFFFFF;
+            line-height:54px;
+            padding:19px;
+        }
+        .firstul li:hover > .secondul {
+        display: block;
+      }
+        .firstul > li
+        {
+            display:inline-block;
+           
+        }
+        .firstul >li > a:hover
+        {
+            background-color:#FF6347;
+        }
+        .firstul
+        {
+            padding-left:40px;
+        }
+        .firstul > li > a.active{
+            background-color:#FF6347;
+        } 
+        .secondul
+        {
+            position:absolute;
+            top:54x;
+            left:-5px;
+            list-style: none;
+            padding-left: 0px;
+            display: none;
+        }
+        .firstul > li
+        {
+            position:relative;
+        }
+        .secondul> li > a
+        {
+            display:block;
+            width: 224px;
+            height: 60px;
+            text-decoration: none;
+            background-color:blue;
+            padding-left: 26px;
+            line-height: 60px;
+            color:#1F1F1F;
+            
+        }
+        
+        .secondul >li
+        {
+            list-style: none ;
+        }
+        .secondul >li >a:hover{
+            background-color:#FF6347;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+   <nav >
+        <ul class="firstul">
+            <li>
+                <a href="">Company Logo</a>
+            </li>
+            <li>
+                <a href="" class="active">Active</a>
+            </li>
+            <li>
+                <a href="">Drop Down</a>
+                <ul class="secondul">
+                    <li><a href="">Item One</a>
+                 
+                    
+                    </li>
+                    <li><a href="">Item Two</a></li>
+                    <li><a href="">Item three</a></li>
+                    <li><a href="">Item four</a></li>
+                    <li><a href="">Item Five</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Mega Menu</a>
+            </li>
+            <li>
+                <a href="">Grid</a>
+            </li>
+            <li>
+                <a href="">Tab Bar</a>
+            </li>
+            <li>
+                <a href="">Images</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+   </nav>
+</body>
+</html>

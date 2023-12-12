@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1
+        {
+            height:400px;
+            width:400px;
+            margin:150px auto;
+            position:relative;
+            animation-name:flower;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes flower {
+            0%
+            {
+                transform:rotateZ(0deg);
+            }
+            100%
+            {
+transform:rotateZ(359deg)
+            }
+        }
+        .common
+        {
+            height:200px;
+            width:200px;
+            top:0%;
+            left:0%;
+            position:absolute;
+            border-bottom-left-radius: 200px;
+            border-top-right-radius:200px;
+        }
+        .b1
+        {   
+            background-color:green;   
+           
+        }
+        .b2
+        {    
+            background-color: blue;
+            transform: rotateZ(45deg);
+            transform-origin:right bottom;
+        }
+        .b3
+        {    
+            background-color: orange;
+            transform: rotateZ(90deg);
+            transform-origin:right bottom;
+        }
+        .b4
+        {    
+            background-color: orangered;
+            transform: rotateZ(135deg);
+            transform-origin:right bottom;
+        }
+        .b5
+        {    
+            background-color: blue;
+            transform: rotateZ(180deg);
+            transform-origin:right bottom;
+        }
+        .b6
+        {    
+            background-color: orange;
+            transform: rotateZ(225deg);
+            transform-origin:right bottom;
+        }
+        .b7
+        {    
+            background-color: pink;
+            transform: rotateZ(270deg);
+            transform-origin:right bottom;
+        }
+        .b8
+        {    
+            background-color: lavender;
+            transform: rotateZ(315deg);
+            transform-origin:right bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">
+        <div class="b1 common"></div>
+        <div class="b2 common"></div>
+        <div class="b3 common"></div>
+        <div class="b4 common"></div>
+        <div class="b5 common"></div>
+        <div class="b6 common"></div>
+        <div class="b7 common"></div>
+        <div class="b8 common"></div>
+    </div>
+</body>
+</html>
